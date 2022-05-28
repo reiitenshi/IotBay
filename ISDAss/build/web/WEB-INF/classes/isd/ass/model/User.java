@@ -1,111 +1,62 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ *  Author: 1398360
  */
 package isd.ass.model;
 
-import java.io.Serializable;
+public class User {
 
-/**
- *
- * @author User
- */
-public class User implements Serializable {
-    private String fname;
-    private String lname;
-    private String email;
-    private String password;
-    private String dob;
-    private String phoneno;
-    private String saddress;
-    private String zipcode;
-    private String state;
-    
-    public User() {
-    }
+    private String userEmail;
+    private String userPassword;
+    private String userFName;
+    private String userLName;
+    private String userAddress;
 
-    public User(String fname, String lname, String email, String password, String dob, String phoneno, String saddress, String zipcode, String state) {
-        this.fname = fname;
-        this.lname = lname;
-        this.email = email;
-        this.password = password;
-        this.dob = dob;
-        this.phoneno = phoneno;
-        this.saddress = saddress;
-        this.zipcode = zipcode;
-        this.state = state;
-    }
-
-    public String getFname() {
-        return fname;
-    }
-
-    public void setFname(String fname) {
-        this.fname = fname;
-    }
-
-    public String getLname() {
-        return lname;
-    }
-
-    public void setLname(String lname) {
-        this.lname = lname;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getDob() {
-        return dob;
-    }
-
-    public void setDob(String dob) {
-        this.dob = dob;
-    }
-
-    public String getPhoneno() {
-        return phoneno;
-    }
-
-    public void setPhoneno(String phoneno) {
-        this.phoneno = phoneno;
-    }
-
-    public String getSaddress() {
-        return saddress;
-    }
-
-    public void setSaddress(String saddress) {
-        this.saddress = saddress;
-    }
-
-    public String getZipcode() {
-        return zipcode;
-    }
-
-    public void setZipcode(String zipcode) {
-        this.zipcode = zipcode;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
+    public User(String userEmail, String userPassword, String userFName, String userLName, String userAddress) {
+        this.userEmail = userEmail;
+        this.userPassword = userPassword;
+        this.userFName = userFName;
+        this.userLName = userLName;
+        this.userAddress = userAddress;
     }
     
+    public String getUserEmail() {
+        return userEmail;
+    }
+
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
+    }
+
+    public String getUserPassword() {
+        return userPassword;
+    }
+
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
+    }
+    
+    public String getUserFName() {
+        return userFName;
+    }
+
+    public void setUserFName(String userFName) {
+        this.userFName = userFName;
+    }
+    
+    public String getUserLName() {
+        return userLName;
+    }
+
+    public void setUserLName(String userLName) {
+        this.userLName = userLName;
+    }
+
+    public String getUserAddress() {
+        return userAddress;
+    }
+
+    public void setUserAddress(String userAddress) {
+        this.userAddress = userAddress;
+    }
+   
 }
